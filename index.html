@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>LoL Challenges</title>
+    <script src="main.js"></script>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav>
+        <ul class="categorySelection">
+            <li class="categorySelector" onclick="changeCategory(this)" data-id="victory">Victoires</li>
+            <li class="categorySelector" onclick="changeCategory(this)" data-id="results">Résultats</li>
+            <li class="categorySelector" onclick="changeCategory(this)" data-id="mastery">Mastery</li>
+        </ul>
+
+        <ul class="challengeSelection" id="victory">
+            <li onclick="changeChallenge(this)" class="challengeSelector"  data-id="nodeath">Sans mourir</li>
+            <li onclick="changeChallenge(this)" class="challengeSelector"  data-id="allchamps">Touche à tout</li>
+            <li onclick="changeChallenge(this)" class="challengeSelector"  data-id="coopvsia">Vs IA</li>
+        </ul>
+        <ul class="challengeSelection" id="results">
+            <li onclick="changeChallenge(this)" class="challengeSelector"  data-id="s+">S+ (draft/ranked)</li>
+            <li onclick="changeChallenge(this)" class="challengeSelector"  data-id="s-">S- (ARAM)</li>
+            <li onclick="changeChallenge(this)" class="challengeSelector"  data-id="pentakill">Pentakill</li>
+        </ul>
+        <ul class="challengeSelection" id="mastery">
+            <li onclick="changeChallenge(this)" class="challengeSelector"  data-id="m5">M5</li>
+            <li onclick="changeChallenge(this)" class="challengeSelector"  data-id="m7">M7</li>
+        </ul>
+    </nav>
+    <main>
+        <section class="challengeSection active" id="info">Data is stored in local. It can be lost if you delete your history.</section>
+        <section class="challengeSection" id="nodeath"></section>
+        <section class="challengeSection" id="allchamps"></section>
+        <section class="challengeSection" id="coopvsia"></section>
+        <section class="challengeSection" id="s+"></section>
+        <section class="challengeSection" id="s-"></section>
+        <section class="challengeSection" id="pentakill"></section>
+        <section class="challengeSection" id="m5"></section>
+        <section class="challengeSection" id="m7"></section>
+        <section class="challengeSection" id="m7fighter"></section>
+        <section class="challengeSection" id="m7tank"></section>
+        <section class="challengeSection" id="m7assassin"></section>
+        <section class="challengeSection" id="m7marksmen"></section>
+        <section class="challengeSection" id="m7support"></section>
+    </main>
+</body>
+</html>
