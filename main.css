@@ -40,7 +40,6 @@ nav:first-child { margin-top: 15px; }
 }
 
 main { text-align: center; }
-
 section.active .flex {
     display: inline-flex;
     max-width: 1200px;
@@ -61,7 +60,3 @@ img {
     border: 1px #4f4f59 solid;
 }
 
-h2 {
-    font-size: 20px;
-    margin-top: 15px;
-}

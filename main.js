@@ -65,6 +65,7 @@ function proliferate(selectedChallenge) {
             const version = champions.version
             champs.forEach(champ => { wrapper.appendChild(newImage(champ, version, selectedChallenge, storage)) })
             addProgressBar(selectedChallenge, champs.length)
+            targetedChallenge.appendChild(document.createElement('h2')) // cant center progress bar, adding an h2 to workaround
             targetedChallenge.appendChild(wrapper)
         })
 }
