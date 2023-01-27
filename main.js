@@ -1,9 +1,9 @@
 const lang = "fr_FR";
 async function getChamps() {
-    let versions = await fetch('http://ddragon.leagueoflegends.com/api/versions.json')
+    let versions = await fetch('https://ddragon.leagueoflegends.com/api/versions.json')
     versions = await versions.json()
     const lastVersion = versions[0]
-    let champions = await fetch(`http://ddragon.leagueoflegends.com/cdn/${lastVersion}/data/${lang}/champion.json`)
+    let champions = await fetch(`https://ddragon.leagueoflegends.com/cdn/${lastVersion}/data/${lang}/champion.json`)
     champions = await champions.json()
 
     return champions
@@ -71,7 +71,7 @@ function proliferate(selectedChallenge) {
 
 function newImage(champion, version, challenge, storage) {
     let image = document.createElement('img');
-    image.setAttribute('src', `http://ddragon.leagueoflegends.com/cdn/${version}/img/champion/${champion}.png`);
+    image.setAttribute('src', `https://ddragon.leagueoflegends.com/cdn/${version}/img/champion/${champion}.png`);
     image.setAttribute('id', `${challenge}_${champion}`);
 
     if (storage?.includes(champion)) { image.classList.add('checked') }
